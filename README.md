@@ -1,4 +1,4 @@
-# _{Order Pizza}_
+# _Order Pizza_
 
 #### _Make your own pizza, 11/3/17_
 
