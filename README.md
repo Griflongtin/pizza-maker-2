@@ -23,7 +23,7 @@ _This Webpage has you make pizza with the toppings you want to have, Then tells 
 * Then go to your Desktop and find the new file called Track-Suggester, Open it.
 * Then just open the index.html file.
 
-* Or just click this link: https://griflongtin.github.io/pizza-maker-2/index.html
+* Or just click this link: https://griflongtin.github.io/pizza-maker-2
 
 ## Known Bugs
 
