@@ -19,14 +19,28 @@
           </select>
         </div>
         <div class="form-group">
-          <input type="checkbox" name="pizza-topping" value="topping">Topping<br>
-          <input type="checkbox" name="pizza-topping" value="topping">Topping<br>
-          <input type="checkbox" name="pizza-topping" value="topping">Topping<br>
-          <input type="checkbox" name="pizza-topping" value="topping">Topping<br>
-          <input type="checkbox" name="pizza-topping" value="topping">Topping<br>
+          <input type="checkbox" name="pizza-topping" value="Cheese">Cheese<br>
+          <input type="checkbox" name="pizza-topping" value="Pepperoni">Pepperoni<br>
+          <input type="checkbox" name="pizza-topping" value="Chicken">Chicken<br>
+          <input type="checkbox" name="pizza-topping" value="Onions">Onions<br>
+          <input type="checkbox" name="pizza-topping" value="Mushrooms">Mushrooms<br>
+          <input type="checkbox" name="pizza-topping" value="Bacon">Bacon<br>
+          <input type="checkbox" name="pizza-topping" value="Spinach">Spinach<br>
         </div>
         <button type="submit" class="btn btn-outline-dark btn-lg btn-block">Order Pizza</button>
       </form>
+      <div id="output-div">
+        <div class="row">
+          <div class="col-md-4">
+            <p>Here is the pizza you ordered!</p>
+            <ul>
+              <li><span id="pizza-size-output"></span></li>
+              <li><span id="pizza-topping-output"></span></li>
+              <li><span id="pizza-cost-output"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

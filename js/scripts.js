@@ -6,7 +6,7 @@ function pizza(size, toppings) {
 }
 
 pizza.prototype.costSize = function () {
-  if(this.size = "Small") {
+  if (this.size = "Small") {
     this.cost += 10;
   } else if (this.size = "Medium") {
     this.cost += 14;
@@ -32,12 +32,21 @@ $(function() {
     event.preventDefault();
     var pizzaSize = $("#pizza-size").val();
     var pizzaTopping = [];
+    var inputTest = false;
     $("input:checkbox[name=pizza-topping]:checked").each(function() {
-      pizzaTopping.push($(this).val());
+      pizzaTopping.push(" " + $(this).val());
+      inputTest = true;
     });
-    var orderPizza = new pizza(pizzaSize, pizzaTopping);
-    debugger
-    orderPizza.orderCost();
-    console.log(orderPizza);
+    if (inputTest === false) {
+      alert("Pick a Topping");
+    }else {
+      var orderPizza = new pizza(pizzaSize, pizzaTopping);
+      orderPizza.orderCost();
+      $("form").hide();
+      $("#output-div").show();
+      $("#pizza-size-output").text(orderPizza.size);
+      $("#pizza-topping-output").text(orderPizza.toppings);
+      $("#pizza-cost-output").text("$" + orderPizza.cost);
+    }
   });
 });
