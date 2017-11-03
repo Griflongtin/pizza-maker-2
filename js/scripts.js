@@ -13,3 +13,7 @@ pizza.prototype.sizeOfPizza = function (size) {
     this.size = "Large";
   }
 };
+
+pizza.prototype.toppings = function (toppings) {
+  this.toppings = toppings;
+};
