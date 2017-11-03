@@ -10,7 +10,7 @@ pizza.prototype.sizeOfPizza = function (input) {
 };
 
 pizza.prototype.toppings = function (input) {
-  this.toppings += input;
+  this.toppings = input;
 };
 
 pizza.prototype.cost = function () {
@@ -32,8 +32,13 @@ pizza.prototype.cost = function () {
 $(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    var pizzaSize = $("input:checkbox[name=pizza-size];checked").val();
-
+    var pizzaSize = $("input:checkbox[name=pizza-size]:checked").val();
+    var pizzaToppings = $("input:checkbox[name=pizza-topping]:checked").val();
+    var orderPizza = new pizza();
+    orderPizza.sizeOfPizza(pizzaSize);
+    orderPizza.toppings(pizzaToppings);
+    orderPizza.cost();
+    console.log(orderPizza);
     });
   });
 
