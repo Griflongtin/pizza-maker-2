@@ -1,3 +1,21 @@
+body {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+
+input {
+  padding: 2px;
+}
+
+.container {
+  border-width: 2px;
+  border-style: inset;
+  border-color: red;
+  padding: 50px;
+}
+
+
 #output-div {
   display: none;
 }
